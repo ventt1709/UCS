@@ -1,0 +1,60 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+
+block_cipher = None
+
+
+a = Analysis(
+    ['main.py'],
+    pathex=[],
+    binaries=[],
+    datas=[],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=[],
+    win_no_prefer_redirects=False,
+    win_private_assemblies=False,
+    cipher=block_cipher,
+    noarchive=False,
+)
+
+a.datas += [("Formato Reportes - copia.xlsx","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Formato Reportes - copia.xlsx", "DATA"),
+		("Formato Reportes - respaldo.xlsx","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Formato Reportes - respaldo.xlsx", "DATA2"),
+		("Formato Reportes.xlsx","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Formato Reportes.xlsx", "DATA3"),
+		("headers.txt", "D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\headers.txt", "DATA4"),
+		("tabla_original.csv","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\tabla_original.csv","DATA5"),
+		("txt.txt","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\txt.txt","DATA6"),
+		("Importar_Archivo.png","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Images\Importar_Archivo.png","DATA7"),
+		("Curva_Esfuerzo_Deformacion.png","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Images\Curva_Esfuerzo_Deformacion.png","DATA8"),
+		("Exportar.png","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Images\Exportar.png","DATA9"),
+		("icon.png","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Images\icon.png","DATA10"),
+		("icon_resized.png","D:\OneDrive\OneDrive - usach.cl\2017- Bibliografía post- peak\PyQt5 Codigo Reestructurado 2.0\recursos\Images\icon_resized.png","DATA11")]
+		
+		
+
+pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.zipfiles,
+    a.datas,
+    [],
+    name='Ensayos UCS',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon='icon.ico',
+)

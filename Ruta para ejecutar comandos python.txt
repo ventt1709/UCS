@@ -1,0 +1,8 @@
+C:\Users\sergi\AppData\Roaming\Python\Python310\Scripts\
+
+C:\Users\sergi\AppData\Local\Programs\Python\Python39-32\Scripts\
+
+
+C:\Users\sergi\OneDrive\Escritorio\venv\Scripts\pip
+python 37
+
